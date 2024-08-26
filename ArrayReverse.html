@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse an array</title>
+</head>
+<body>
+    
+    <p>Write a function to reverse an array of integers.</p>
+    <br>
+    <p>Given [1, 2, 3, 4, 5]</p>
+
+    <script>
+
+        let array=[1,2,3,4,5]
+
+        function Reverse(){
+            let n=array.length
+
+        for(i=0;i<n/2;i++){
+            let temp=array[i];
+            array[i]=array[n-i-1];
+            array[n-i-1]=temp;
+        }
+        
+        
+        }
+
+        Reverse()
+        console.log("Reversed array:",array);
+        document.write("Reversed array:", array);
+        
+
+    </script>
+</body>
+</html>
